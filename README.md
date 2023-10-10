@@ -1,4 +1,4 @@
 # mad_libs
-Juego de Historias Locas (o "Mad Libs") creado para aprender y practicar Python.
+6 Proyectos con los que estoy iniciando mi aprendizaje en Python. 
 
-Se trata de un juego que presenta un párrafo o una oración, que poniendo alguna palabra, completa el espacio faltante.
+Son básicos, pero van a modo de aprendizaje y práctica en un nuevo lenguaje.
