@@ -1,4 +1,5 @@
-import random
+import random #nos da acceso a todos los elementos del modulo random de Python
+
 
 def adivina_el_numero(x):
 
@@ -15,3 +16,13 @@ def adivina_el_numero(x):
 
     while prediccion != numero_aleatorio:
         prediccion = int(input(f"Adivina un número entre 1 y {x}: ")) #El valor que ingrese el usuario, por el input, se asignará a la variable prediccion. El int inicial, trabaja lo ingresado como un número, ya que input siempre toma lo ingresado como string.
+
+        if prediccion < numero_aleatorio:
+            print("Intenta otra vez. El número que ingresaste es muy pequeño")
+        elif prediccion > numero_aleatorio:
+            print("Intenta otra vez. El número que ingresaste es muy grande.")
+
+    print(f"¡Felicitaciones! ¡Adivinaste el número! Era el {numero_aleatorio}.")
+
+
+adivina_el_numero(10) #el parametro es x, pero cuando llamo a la función debo darle el numero para que establezca el juego, con un numero random entre 1 y 10.
