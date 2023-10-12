@@ -2,8 +2,10 @@ import random
 
 
 def jugar(): #va en parentesis sin argumentos, porque no recibirá parametros. Solo se ejecuta llamando a la función.
-    usuario = input("Escoge una opción: 'pi' para piedra, 'pa' para papel, o 'ti' para tijeras.\n").lower() #convertimos la respuesta del user en minusculas para evitar problemas.
-    computadora = random.choice(['pi', 'pa', 'ti'])
+    usuario = input("Escoge una opción: escribe 'piedra', 'papel' o 'tijera'.\n").lower() #convertimos la respuesta del user en minusculas para evitar problemas.
+    computadora = random.choice(['piedra', 'papel', 'tijera'])
+    print(f"Elegiste: {usuario}")
+    print(f"La computadora eligió: {computadora}")
 
     if usuario == computadora:
         return '¡Empate!'
@@ -15,13 +17,13 @@ def jugar(): #va en parentesis sin argumentos, porque no recibirá parametros. S
 
 def gano_el_jugador(jugador, oponente):
     # Retornar True si gana el jugador. 
-    # Tres posibilidades para ganar:
-        # Piedra gana a Tijera
-        # Tijera gana a Papel
-        # Papel gana a Piedra
-    if ((jugador == 'pi' and oponente == 'ti')
-        or (jugador == 'ti' and oponente == 'pa')
-        or (jugador == 'pa' and oponente == 'pi')):
+    # Tres posibilidades papelra ganar:
+        # piedra gana a tijera
+        # tijera gana a papel
+        # papel gana a piedra
+    if ((jugador == 'piedra' and oponente == 'tijera')
+        or (jugador == 'tijera' and oponente == 'papel')
+        or (jugador == 'papel' and oponente == 'piedra')):
         return True
     else: 
         return False
