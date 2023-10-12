@@ -1,5 +1,6 @@
 import random
 
+
 def adivina_el_numero_computadora(x):
     print("==================================")
     print("    ¡Bienvenido/a al Juego!       ")
@@ -21,7 +22,7 @@ def adivina_el_numero_computadora(x):
 
         #Obtener respuesta del usuario.
         #Usamos .lower para prevenir que el usuario ingrese una letra en minuscula.
-        respuesta = input(f"Mi predicción es {prediccion}. Si es muy alta, ingresa (A). Si es muy baja, ingresa (B). Si es correcta, ingresa (C).").lower
+        respuesta = input(f"Mi predicción es {prediccion}. Si es muy alta, ingresa (A). Si es muy baja, ingresa (B). Si es correcta, ingresa (C). ¿Qué opción eliges?: ").lower()
 
         if respuesta == "a":
             limite_superior = prediccion - 1
@@ -31,3 +32,6 @@ def adivina_el_numero_computadora(x):
             limite_inferior = prediccion + 1
 
     print(f"¡Siii! La computadora adivinó tu número correctamente: {prediccion}")
+
+
+adivina_el_numero_computadora(10)
