@@ -3,6 +3,7 @@ import string
 
 #Las palabras las tenemos en un archivo separado. Importamos un elemento de un archivo, que nosotros queramos.
 from palabras import palabras
+from vidas_diagrama import vidas_diccionario_visual
 
 def obtener_palabra_valida(palabras):
     #Seleccionar una palabra al azar de la lista
@@ -34,5 +35,11 @@ def ahorcado():
     vidas = 7
     #Trabaja junto al archivo vidas_diagrama, como un diccionario visual. Dependiendo de la cantidad de vidas, se visualizará un diagrama. 
     
-    while len(letras_por_adivinar) > 0
+    while len(letras_por_adivinar) > 0 and vidas > 0 :
+        #Mensaje inicial para informar al usuario de sus vidas y las letras adivinadas.
+        print(f"Te quedan {vidas} vidas y has usado estas letras: {' '.join(letras_adivinadas)}.")
+
+        #Mostrar el estado actual de la palabra
+        palabra_lista = [letra if letra in letras_adivinadas else '-' for letra in palabra]
+        print(vidas_diccionario_visual[vidas]) # mostrar estado del ahorcado.
 
