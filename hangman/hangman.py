@@ -20,3 +20,8 @@ def ahorcado():
     print("==============================================")
 
     palabra = obtener_palabra_valida(palabras)
+
+    letras_por_adivinar = set(palabra)
+    # set() permite crear un conjunto, a partir de la palabra recibida, de letras sin que se repitan. Ejemplo: si la palabra es "MOONGOSE", el conjunto se guardaria como {'M', 'O', 'N', 'G', 'S', 'E'} (Es decir: la letra O no se guardará más de una vez.)
+    letras_adivinadas = 
+    abecedario = 
