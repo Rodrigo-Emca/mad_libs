@@ -20,6 +20,7 @@ def ahorcado():
     print("==============================================")
     print("    ¡Bienvenido/a al Juego del Ahorcado!      ")
     print("==============================================")
+    print("                                              ")
 
     palabra = obtener_palabra_valida(palabras)
 
