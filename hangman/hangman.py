@@ -60,3 +60,12 @@ def ahorcado():
         #Si la letra elegida por el usuario ya fue ingresada.
         else:
             print(f"\nYa escogiste esa letra. Por favor, elige una letra nueva.")
+
+    #El juego llega e esta linea cuando se adivinan todas las letras de la palabra o cuando se agotan las vidas del jugador.
+    if vidas == 0:
+        print(vidas_diccionario_visual[vidas])
+        print(f"¡Ahorcado! Perdiste. Lo lamento, la palabra era {palabra}.")
+    else:
+        print(f"¡Excelente! Adivinaste la palabra: {palabra}")
+
+ahorcado()
