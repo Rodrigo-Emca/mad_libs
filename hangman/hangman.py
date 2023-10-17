@@ -1,4 +1,5 @@
 import random
+import string
 
 #Las palabras las tenemos en un archivo separado. Importamos un elemento de un archivo, que nosotros queramos.
 from palabras import palabras
@@ -23,5 +24,15 @@ def ahorcado():
 
     letras_por_adivinar = set(palabra)
     # set() permite crear un conjunto, a partir de la palabra recibida, de letras sin que se repitan. Ejemplo: si la palabra es "MOONGOSE", el conjunto se guardaria como {'M', 'O', 'N', 'G', 'S', 'E'} (Es decir: la letra O no se guardará más de una vez.)
-    letras_adivinadas = 
-    abecedario = 
+
+    letras_adivinadas = set()
+    #Este set lo inicializamos con un set vacio, para crear un conjunto nuevo, que no tendrá nada inicialmente. 
+    
+    abecedario = set(string.ascii_uppercase)
+    #Nos retornará un diccionario con todas las letras en mayuscula, escepto la ñ. Se puede agregar manualmente.
+
+    vidas = 7
+    #Trabaja junto al archivo vidas_diagrama, como un diccionario visual. Dependiendo de la cantidad de vidas, se visualizará un diagrama. 
+    
+    while len(letras_por_adivinar) > 0
+
